@@ -16,7 +16,7 @@
  /*Layout*/
  
  .main {
-   background-color: #32473C;
+   background-color: $forest;
    height: 100vh;
    width: 100vw;
    padding: 0;
@@ -38,7 +38,7 @@
  }
  
  .name-poster {
-   background-color: #fff;
+   background-color: $linen;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -91,7 +91,7 @@
  
  .shelf-top {
    width: 100%;
-   border-bottom: 2rem solid #FDA478;
+   border-bottom: 2rem solid $creamsicle;
    
    .book-1 {
      background-image: url('https://github.com/legoodyearrr/leweb/blob/main/book-1.png?raw=true');
@@ -104,7 +104,7 @@
  
  .shelf-bottom {
    width: 100%;
-   border-bottom: 2rem solid #FDA478;
+   border-bottom: 2rem solid $creamsicle;
    margin-bottom: 6%;
    .book-1 {
      background-image: url('https://github.com/legoodyearrr/leweb/blob/main/book-1.png?raw=true');
