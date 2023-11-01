@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>App Down</title>
+  </head>
+  <body>
+    <link rel="stylesheet" href="https://use.typekit.net/jgr8vvt.css">
+
+    <style>
+      /*Self-contained Styles*/
+      .background {
+        height: 100vh;
+        width: 100vw;
+        background-color: #515C34;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .postcard {
+        height: 30vh;
+        min-height: 300px;
+        max-height: 600px;
+        padding: 2rem 1rem;
+        max-width: 40%;
+        min-width: 300px;
+        background-color: #ffffd6;
+        border-radius: 0.8rem;
+        position: relative;
+        box-shadow: 5px 4px 0px 2px #b59a46;
+      }
+
+      .postcard:before {
+        height: 8rem;
+        width: 10rem;
+        z-index: 999;
+        content: "";
+        background-image: url("data:image/png;base64,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");
+        display: block;
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: fixed;
+        margin-top: -8vh;
+        margin-left: -3vw;
+      }
+
+      .postcard-inner {
+        text-align: center;
+      }
+
+      body {
+        font-family: henderson-slab-basic, serif;
+        font-weight: 600;
+        font-style: normal;
+        color: #282725;
+        margin: 0;
+      }
+
+      h1 {
+        font-family: fenway-park-jf, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color: #6C682F;
+        text-align: center;
+        font-size: 3rem;
+        margin-top: 0rem;
+        margin-bottom: 0;
+      }
+
+      p {
+        text-wrap: balance;
+        margin-top: 2rem;
+      }
+
+      .dotted-line {
+        height: 4px;
+        width: 100%;
+        background-image: linear-gradient(to right,
+        #E3CE97 33%,
+                rgba(255, 255, 255, 0) 0%);
+        background-position: bottom;
+        background-size: 12px 1px;
+        background-repeat: repeat-x;
+        margin: 0.2rem 0rem;
+      }
+
+      a {
+        color: #b59a46;
+        border: 2px solid #b59a46;
+        box-shadow: 5px 4px 0 1px #b59a46;
+        border-radius: 1.8rem;
+        font-family: "cubano", sans-serif;
+        background-color: transparent;
+        transition: all ease 0.3s;
+        display: inline-block;
+        font-weight: 400;
+        text-align: center;
+        vertical-align: middle;
+        user-select: none;
+        padding: 0.5rem 1rem;
+        font-size: 1.25rem;
+        line-height: 1.5;
+        transition: all ease 0.3s;
+        text-decoration: none;
+      }
+
+      a:hover, a:not(:disabled):not(.disabled):active, a:active, a:focus, a:focus {
+        color: #b59a46;
+        border-color: #b59a46;
+        background-color: transparent;
+        box-shadow: 2px 2px 0 1px #b59a46;
+      }
+
+      .margin-top {
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+      }
+
+    </style>
+    <div class="background">
+      <div class="postcard">
+        <div class="postcard-inner">
+          <h1>We'll be right back!</h1>
+          <div class="dotted-line"></div>
+          <p>Sorry, we're down for maintenance, but we'll get things running again shortly! Please come back later!</p>
+          <p>Check out our website for updates!</p>
+          <div class="margin-top"><a href="https://www.culturefoundrystudios.com/the-language-revitalization-platform/support">See updates</a></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
